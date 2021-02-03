@@ -1,0 +1,2 @@
+"use strict";var e=require("./app.js"),r=require("./store.js");require("@sveltejs/kit/dist/renderer"),require("./localStore.js");const t=e.create_ssr_component(((t,s,a,u)=>{let i,o;return o=e.subscribe(r.theme,(e=>i=e)),e.onMount((()=>{"dark"===i&&document.querySelector("html").classList.add("dark")})),o(),`<main>${u.default?u.default({}):""}</main>`}));exports.default=t;
+//# sourceMappingURL=$layout.svelte.js.map

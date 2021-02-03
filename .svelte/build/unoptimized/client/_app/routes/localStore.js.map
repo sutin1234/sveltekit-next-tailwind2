@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["/Users/sutindev/Project/Svelte3/sveltekit-tailwind2-typescript/src/routes/localStore.ts"],
+  "sourcesContent": ["import { writable } from 'svelte/store';\n\nexport function localStore(key, value) {\n  const data = typeof localStorage != 'undefined' ? localStorage.getItem(key) : null;\n  const store = writable(value);\n  if (data !== null) {\n    store.set(data);\n  }\n  store.subscribe((val) => {\n    if (typeof localStorage == 'undefined') {\n      return;\n    }\n    localStorage.setItem(key, val);\n  });\n\n  return store;\n}\n"],
+  "mappings": "AAAA;AAEO,2BAAoB,KAAK;AAC9B,QAAM,OAAO,OAAO,gBAAgB,cAAc,aAAa,QAAQ,OAAO;AAC9E,QAAM,QAAQ,SAAS;AACvB,MAAI,SAAS;AACX,UAAM,IAAI;AAAA;AAEZ,QAAM,UAAU,CAAC;AACf,QAAI,OAAO,gBAAgB;AACzB;AAAA;AAEF,iBAAa,QAAQ,KAAK;AAAA;AAG5B,SAAO;AAAA;",
+  "names": []
+}
