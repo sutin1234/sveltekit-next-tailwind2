@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["/Users/sutindev/Project/Svelte3/sveltekit-tailwind2-typescript/src/routes/store.ts"],
-  "sourcesContent": ["import { localStore } from './localStore';\n\nexport const theme = localStore('theme', 'dark');\n"],
-  "mappings": "AAAA;AAEO,aAAM,QAAQ,WAAW,SAAS;",
-  "names": []
-}
