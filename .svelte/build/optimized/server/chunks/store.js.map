@@ -1,0 +1,1 @@
+{"version":3,"file":"store.js","sources":["../../../unoptimized/server/_app/routes/store.js"],"sourcesContent":["import {localStore} from \"./localStore.js\";\nexport const theme = localStore(\"theme\", \"dark\");\n//# sourceMappingURL=store.js.map\n"],"names":["theme","localStore"],"mappings":"yGACY,MAACA,EAAQC,aAAW,QAAS"}

@@ -1,0 +1,1 @@
+{"version":3,"names":[],"sources":["index.svelte"],"sourcesContent":["<script lang=\"ts\">export let slug = '';\n</script>\n\n<h1>Profile {slug} </h1>\n"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;sBAGa,GAAI;;;;;;sCAAJ,GAAI;;;;;;;;;iDAAJ,GAAI;;;;;;;;;;;OAHY,IAAI,GAAG,EAAE;;;;;;;;;;;;;;;;"}

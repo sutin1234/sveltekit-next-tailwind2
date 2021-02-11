@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["/Users/sutindev/Project/Svelte3/sveltekit-tailwind2-typescript/src/assets/test.ts"],
+  "sourcesContent": ["export const a = 90;"],
+  "mappings": "AAAO,aAAM,IAAI;",
+  "names": []
+}

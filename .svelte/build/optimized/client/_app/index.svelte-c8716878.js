@@ -1,0 +1,2 @@
+import{S as s,i as a,s as t,e as r,t as o,c as e,a as c,b as u,d as n,f as l,g as f,n as i}from"./start-ca7a594e.js";function d(s){let a,t;return{c(){a=r("h1"),t=o("About")},l(s){a=e(s,"H1",{});var r=c(a);t=u(r,"About"),r.forEach(n)},m(s,r){l(s,a,r),f(a,t)},p:i,i:i,o:i,d(s){s&&n(a)}}}export default class extends s{constructor(s){super(),a(this,s,null,d,t,{})}}
+//# sourceMappingURL=index.svelte-c8716878.js.map

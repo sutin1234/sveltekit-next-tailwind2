@@ -1,0 +1,2 @@
+import{S as s,i as a,s as t,e as r,t as e,c as l,a as o,b as u,d as n,f as c,g as i,h as f,n as g}from"./start-ca7a594e.js";function d(s){let a,t,d;return{c(){a=r("h1"),t=e("Profile "),d=e(s[0])},l(r){a=l(r,"H1",{});var e=o(a);t=u(e,"Profile "),d=u(e,s[0]),e.forEach(n)},m(s,r){c(s,a,r),i(a,t),i(a,d)},p(s,[a]){1&a&&f(d,s[0])},i:g,o:g,d(s){s&&n(a)}}}function h(s,a,t){let{slug:r=""}=a;return s.$$set=s=>{"slug"in s&&t(0,r=s.slug)},[r]}export default class extends s{constructor(s){super(),a(this,s,h,d,t,{slug:0})}}
+//# sourceMappingURL=index.svelte-08ba5879.js.map
