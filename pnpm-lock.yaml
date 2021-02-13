@@ -1,3 +1,5 @@
+dependencies:
+  svelte-class-transition: 1.0.4_svelte@3.32.3
 devDependencies:
   '@snowpack/plugin-build-script': 2.1.0
   '@snowpack/plugin-typescript': 1.2.1_typescript@4.1.5
@@ -114,9 +116,9 @@ packages:
     dependencies:
       cheap-watch: 1.0.3
       http-proxy: 1.18.1
-      rollup: 2.38.5
-      rollup-plugin-css-chunks: 2.0.2_rollup@2.38.5
-      rollup-plugin-terser: 7.0.2_rollup@2.38.5
+      rollup: 2.39.0
+      rollup-plugin-css-chunks: 2.0.2_rollup@2.39.0
+      rollup-plugin-terser: 7.0.2_rollup@2.39.0
       sade: 1.7.4
       scorta: 1.0.0
       snowpack: 3.0.11
@@ -141,6 +143,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EPpXLOVqDvisVxtlbvzfyqSsFeQxltFbluZNRndIb8tr9KiBnYNLzrc1N3pyKUCww2RNrfHDViqDWWE1LCJQtQ==
+  /@types/node/14.14.27:
+    dev: true
+    resolution:
+      integrity: sha512-Ecfmo4YDQPwuqTCl1yBxLV5ihKfRlkBmzUEDcfIRvDxOTGQEeikr317Ln7Gcv0tjA8dVgKI3rniqW2G1OyKDng==
   /@types/parse-json/4.0.0:
     dev: true
     resolution:
@@ -841,12 +847,12 @@ packages:
       node: '>= 0.4'
     resolution:
       integrity: sha512-QCOllgZJtaUo9miYBcLChTUaHNjJF3PYs1VidD7AwiEj1kYxKeQTctLAezAOH5ZKRH0g2IgPn6KwB4IT8iRpvA==
-  /esbuild/0.8.44:
+  /esbuild/0.8.45:
     dev: true
     hasBin: true
     requiresBuild: true
     resolution:
-      integrity: sha512-m9yyBZMgWuAB7e7tA2g9L4PovoLa5Xb73+Yg9uBBR2w3Fe4P9/nxqj/HLrw1k/rjdjF1eX1kNJRytboqOtRCCQ==
+      integrity: sha512-AhR+h/Kat9QMssi0rSJIei0yR+dJ0DQ5aDqnZy4VLu9kOBHdJh8vDSE2XzUlwnm4umvMFnfQTELZlsH7Zmvksw==
   /escalade/3.1.1:
     dev: true
     engines:
@@ -1296,7 +1302,7 @@ packages:
       integrity: sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
   /jest-worker/26.6.2:
     dependencies:
-      '@types/node': 14.14.25
+      '@types/node': 14.14.27
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -2485,9 +2491,9 @@ packages:
     dev: true
     resolution:
       integrity: sha1-QzdOLiyglosO8VI0YLfXMP8i7rM=
-  /rollup-plugin-css-chunks/2.0.2_rollup@2.38.5:
+  /rollup-plugin-css-chunks/2.0.2_rollup@2.39.0:
     dependencies:
-      rollup: 2.38.5
+      rollup: 2.39.0
       rollup-pluginutils: 2.8.2
       sourcemap-codec: 1.4.8
       url-join: 4.0.1
@@ -2510,13 +2516,13 @@ packages:
       svelte: '>=3.5.0'
     resolution:
       integrity: sha512-vopCUq3G+25sKjwF5VilIbiY6KCuMNHP1PFvx2Vr3REBNMDllKHFZN2B9jwwC+MqNc3UPKkjXnceLPEjTjXGXg==
-  /rollup-plugin-terser/7.0.2_rollup@2.38.5:
+  /rollup-plugin-terser/7.0.2_rollup@2.39.0:
     dependencies:
       '@babel/code-frame': 7.12.13
       jest-worker: 26.6.2
-      rollup: 2.38.5
+      rollup: 2.39.0
       serialize-javascript: 4.0.0
-      terser: 5.5.1
+      terser: 5.6.0
     dev: true
     peerDependencies:
       rollup: ^2.0.0
@@ -2537,6 +2543,15 @@ packages:
       fsevents: 2.3.2
     resolution:
       integrity: sha512-VoWt8DysFGDVRGWuHTqZzT02J0ASgjVq/hPs9QcBOGMd7B+jfTr/iqMVEyOi901rE3xq+Deq66GzIT1yt7sGwQ==
+  /rollup/2.39.0:
+    dev: true
+    engines:
+      node: '>=10.0.0'
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
+    resolution:
+      integrity: sha512-+WR3bttcq7zE+BntH09UxaW3bQo3vItuYeLsyk4dL2tuwbeSKJuvwiawyhEnvRdRgrII0Uzk00FpctHO/zB1kw==
   /run-parallel/1.2.0:
     dependencies:
       queue-microtask: 1.2.2
@@ -2605,9 +2620,9 @@ packages:
       integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
   /snowpack/3.0.11:
     dependencies:
-      esbuild: 0.8.44
+      esbuild: 0.8.45
       open: 7.4.0
-      rollup: 2.38.5
+      rollup: 2.39.0
     dev: true
     engines:
       node: '>=10.19.0'
@@ -2727,6 +2742,14 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
+  /svelte-class-transition/1.0.4_svelte@3.32.3:
+    dependencies:
+      svelte: 3.32.3
+    dev: false
+    peerDependencies:
+      svelte: ^3.21.0
+    resolution:
+      integrity: sha512-00Rs6Ft5V9v4aqHIZKZHY2/OUQjFSNBXtG53ped3SEyl0kYiOyXu/16Ro3xsKMyaU4/xppoL8ef5uPoSP+BNPw==
   /svelte-hmr/0.12.6_svelte@3.32.3:
     dependencies:
       svelte: 3.32.3
@@ -2847,7 +2870,7 @@ packages:
       postcss: ^8.0.9
     resolution:
       integrity: sha512-s8NEqdLBiVbbdL0a5XwTb8jKmIonOuI4RMENEcKLR61jw6SdKvBss7NWZzwCaD+ZIjlgmesv8tmrjXEp7C0eAQ==
-  /terser/5.5.1:
+  /terser/5.6.0:
     dependencies:
       commander: 2.20.3
       source-map: 0.7.3
@@ -2857,7 +2880,7 @@ packages:
       node: '>=10'
     hasBin: true
     resolution:
-      integrity: sha512-6VGWZNVP2KTUcltUQJ25TtNjx/XgdDsBDKGt8nN0MpydU36LmbPPcMBd2kmtZNNGVVDLg44k7GKeHHj+4zPIBQ==
+      integrity: sha512-vyqLMoqadC1uR0vywqOZzriDYzgEkNJFK4q9GeyOBHIbiECHiWLKcWfbQWAUaPfxkjDhapSlZB9f7fkMrvkVjA==
   /timsort/0.3.0:
     dev: true
     resolution:
@@ -2997,6 +3020,7 @@ specifiers:
   prettier-plugin-svelte: ^2.1.1
   rollup: ^2.38.5
   svelte: ^3.29.0
+  svelte-class-transition: ^1.0.4
   svelte-preprocess: ^4.0.0
   tailwindcss: ^2.0.2
   tslib: ^2.0.0

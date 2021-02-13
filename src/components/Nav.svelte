@@ -1,7 +1,9 @@
 <script>
+	import DropdownMenu from './DropdownMenu.svelte';
   import BrandLogo from '$components/BrandLogo.svelte'
   import TextLink from '$components/TextLink.svelte'
   
+  /** nav menu */
   const navList = [
     { text: 'Home', href: '/', target: '', active: 'bg-gray-700'},
     { text: 'Timeline', href: '/timeline'},
@@ -11,6 +13,19 @@
     { text: 'About', href: '/about'},
     { text: 'Contact', href: '/contact'},
   ]
+  /** dropdown menu right */
+  const items = [
+        { text: 'โปรไฟล์', href: '#', role: 'menuitem', className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100' },
+        { text: 'ตั้งค่า', href: '#', role: 'menuitem', className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100' },
+        { text: 'เปลี่ยนรหัสผ่าน', href: '#', role: 'menuitem', className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100' },
+        { text: 'ออกจากระบบ', href: '#', role: 'menuitem', className: 'block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100' }
+    ]
+  const className = "absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5"
+
+  let isOpen:boolean = false;
+  const onOpen = () => isOpen = !isOpen
+  const onClose = () => isOpen = false
+
 </script>
 
 <nav class="bg-gray-800">
@@ -58,20 +73,18 @@
         </button>
 
         <!-- Profile dropdown -->
-        <!-- <div class="relative ml-3">
+        <div class="relative ml-3">
           <div>
-            <button class="flex text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
+            <button on:click={onOpen} on:blur={onClose} class="flex text-sm bg-gray-800 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu" aria-haspopup="true">
               <span class="sr-only">Open user menu</span>
               <img class="w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
             </button>
           </div>
-          <div class="absolute right-0 w-48 py-1 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5" role="menu" aria-orientation="vertical" aria-labelledby="user-menu">
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Your Profile</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Settings</a>
-            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
-          </div>
+          {#if isOpen}
+            <DropdownMenu {items} {className}/>
+          {/if}
         </div>
-         -->
+        
       </div>
     </div>
   </div>
